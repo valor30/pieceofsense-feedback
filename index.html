@@ -1,0 +1,150 @@
+
+<html>
+  <head>
+    <title>Feedback||Form</title>
+  </head>
+  <body>
+    <!-----------------------------------Form-heading--------------------------------->
+    <h1 id="title">Feedback Form</h1>
+    <!-----------------------------------Form-section--------------------------------->
+    <div id="main-form">
+      <p id="description">Let us know how we can improve Piece of Sense</p>
+      <form id="survey-form" method="POST" name="google-sheet">
+         <div class="rowTab">
+          <div class="labels">
+              <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+          </div>
+        <div class="rowTab">
+          <div class="labels">
+              <label id="email-label" for="name">* Email: </label>
+          </div>
+          <div class="rightTab">
+              <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+          </div>
+        <div class="rowTab">
+          <div class="labels">
+              <label id="address-label" for="address">* Address: </label>
+          </div>
+          <div class="rightTab">
+               <input type="text" name="address" id="address" class="input-field" required placeholder="Address">
+          </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+                <label id="mobile-label" for="mobile">* Phone No: </label>
+            </div>
+            <div class="rightTab">
+                <input type="number" name="mobile" id="mobile" class="input-field" required placeholder="Enter your Phone number">
+            </div>
+            </div>
+        <div class="rowTab">
+          <div class="labels">
+              <label for="Currentpost">How are the all paintings?</label>
+          </div>
+          <div class="rightTab">
+              <select id="dropdown" name="experience" class="dropdown">
+                  <option disabled value>Select an option</option>
+                  <option value="Excellent">Excellent</option>
+                  <option value="Good">Good</option>
+                  
+                  <option value="Moderate">Moderate</option>
+                  <option  value="Bad">Bad</option>
+                  
+                  
+                
+                </select>
+          </div>
+          </div>
+        <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* How likely is that you would recommend Piece of Sense to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+         <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most in Piece of Sense: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="Mandala Arts">Mandala Arts</option>
+      <option value="Pencil Sketches">Pencil Sketches</option>
+      <option value="Portraits">Portraits</option>
+      <option value="Coaster Arts">Coaster Arts</option>
+      <option value="Pen Works">Pen Works</option>
+      <option value="Leaf Arts">Leaf Arts</option>
+      <option value="Bottle Arts">Bottle Arts</option>
+      <option value="Charcoal Arts">Charcoal Arts</option>
+      <option value="Clay Arts">Clay Arts</option>
+      <option value="Cartoon Arts">Cartoon Arts</option>
+    </select>
+      </div>
+    </div>
+        <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Place Your ORDER HERE<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Mandala Arts</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Pencil Sketches</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Portraits</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Coaster Arts</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Pen Works</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Leaf Arts</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Bottle Arts</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Charcoal Arts</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Clay Arts</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Cartoon Arts</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Others</label></li>
+        </ul>
+      </div>
+    </div>
+        <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here...(Comment if you select other previously)"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+      </form>
+    </div>
+    <p>&copy; 2023 SRIJITA SARKAR. All rights reserved.</p>
+    <p>
+    <p>
+        &copy; Created By
+        <a href="https://github.com/valor30" target="_blank"
+          >Apratim Mukherjee
+        ></a>
+            </p>
+<link rel="stylesheet" href="stylesform.css">
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz06FHhnDvEeAe3RNguOLA9T0iVsby5jYwet0RPasnE0sAuHpug6NTk2WWyGIXKBC7mJw/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  </body>
+</html>
